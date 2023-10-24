@@ -1,2 +1,5 @@
-docker rm -f $(docker ps -a | grep -v CONTAINER | grep -v consul-agent | awk '{print $1}')
+# Docker commands
+
+# Remove all containers
+docker rm -f $(docker ps -a | grep -v CONTAINER | awk '{print $1}')
 
