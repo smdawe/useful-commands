@@ -1,1 +1,2 @@
+# delete all but main / master branch
 git branch | grep -v "main" | grep -v "master" | xargs git branch -D
