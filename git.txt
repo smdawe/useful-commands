@@ -1,2 +1,6 @@
 # delete all but main / master branch
 git branch | grep -v "main" | grep -v "master" | xargs git branch -D
+
+# view run time class path
+rm -rf dep.txt && ./gradlew dependencies --configuration runtimeClasspath > dep.txt
+
