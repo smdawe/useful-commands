@@ -1,0 +1,1 @@
+kubectl port-forward <pod> 8080:8080
