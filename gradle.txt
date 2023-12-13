@@ -1,1 +1,2 @@
-
+# view run time class path
+rm -rf dep.txt && ./gradlew dependencies --configuration runtimeClasspath > dep.txt
