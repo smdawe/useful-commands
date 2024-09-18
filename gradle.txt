@@ -1,2 +1,5 @@
 # view run time class path
 rm -rf dep.txt && ./gradlew dependencies --configuration runtimeClasspath > dep.txt
+
+# update gradlew version
+./gradlew wrapper --gradle-version 7.6.1
