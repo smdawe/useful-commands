@@ -3,3 +3,5 @@
 # Remove all containers
 docker rm -f $(docker ps -a | grep -v CONTAINER | awk '{print $1}')
 
+# remove all images
+docker rmi $(docker images | grep oobook | awk '{print $2}')
